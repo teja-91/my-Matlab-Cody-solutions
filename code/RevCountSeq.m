@@ -1,3 +1,5 @@
+%Author: Raviteja
+%Date created: 21/7/2015
 % Given a "counting sequence" vector x, construct the original sequence y.
 % 
 % A counting sequence is formed by "counting" the entries in a given sequence. This is sometimes called run-length encoding.
@@ -16,5 +18,9 @@
 % For this problem, all elements in the sequences x and y will be in the range from 1 to 9.
 
 function y = RevCountSeq(x)
-  y = x;
+l=0;
+for i=1:2:length(x)
+    y(l+[1:x(i)])=x(i+1);
+    l=l+x(i);
+end
 end
