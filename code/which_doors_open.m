@@ -1,5 +1,5 @@
-% 
-% 
+%Author: Raviteja
+%Date created: 21/7/2015
 % There are n doors in an alley. Initially they are all shut. You have been tasked to go down the alley n times, and open/shut these doors in a particular manner:
 % 
 % Toggle the state of each door you visit. That is, if the door is shut, open it, and if the door is open, shut it.
