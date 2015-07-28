@@ -14,5 +14,4 @@ k(k==',')=[];
 m=str2num(k);
 b=b+sum(m);
 end
-
 end
