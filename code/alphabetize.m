@@ -7,7 +7,7 @@
 
 function alpha_list = alphabetize(list)
 for i=1:numel(list);
-k=strsplit(cell2mat(list(i)))
+k=strsplit(cell2mat(list(i)));
 q=cell2mat(k(end));
 p(i)=q(1);
 end
