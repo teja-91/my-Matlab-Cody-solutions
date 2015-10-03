@@ -10,6 +10,6 @@ function y = logb(x,b)
 y=0;
 while(x>=b)
 x=x/b;
-y=y+1
+y=y+1;
 end
 end
