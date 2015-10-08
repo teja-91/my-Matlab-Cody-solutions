@@ -8,11 +8,11 @@
 function P = politeness(N)
 k=factor(N);
 k=k(k>2);
-cnt=histc(k,unique(k))
+cnt=histc(k,unique(k));
 if(isempty(cnt))
     P=0;
 else
-    g=cumprod(cnt+1)
+    g=cumprod(cnt+1);
   P=g(end)-1;
 end
 end
