@@ -7,8 +7,9 @@
 % in = 876 ---> out = [73 3 2]
 
 function y = unique_prime_factors(x)
-n=2:x;% getting te numbers from 2 to x
-n=n(isprime(n));% seperating the prime numbers
-n=n(mod(x,n)==0);%finding prime factors
-  y = sort(n,'descend');%sort the resuting vector in descending order
+% n=2:x;% getting te numbers from 2 to x
+% n=n(isprime(n));% seperating the prime numbers
+% n=n(mod(x,n)==0);%finding prime factors
+%   y = sort(n,'descend');%sort the resuting vector in descending order
+y=sort(unique(factor(x)),'descend');
 end
