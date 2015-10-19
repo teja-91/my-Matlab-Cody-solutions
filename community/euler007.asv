@@ -1,0 +1,16 @@
+% By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, 
+% we can see that the 6th prime is 13.
+% 
+% What is the Nth prime number?
+
+function y = euler007(x)
+k=log(x)
+g=log(log(x)
+e=k+g-1+(g-2)/k)-(k^2-6*k+11)/(2*))
+ubound=x*(e);
+ubound=round(ubound)
+while(~isprime(ubound))
+    ubound=ubound-1;
+end
+y=ubound
+end
